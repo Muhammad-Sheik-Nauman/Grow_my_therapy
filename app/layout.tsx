@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "The Lilac Blog",
-  description: "My tiny corner of the internet where I talk about all things healing, heart, and wholeness.",
+  title: "Dr. Maya Reynolds, PsyD - Anxiety, Trauma & Burnout Therapy in Santa Monica",
+  description: "Licensed clinical psychologist specializing in anxiety, trauma, and burnout therapy for high-achieving adults in Santa Monica, CA. CBT, EMDR, and mindfulness-based approaches.",
 };
 
 export default function RootLayout({
@@ -25,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         {children}
       </body>

@@ -27,24 +27,24 @@ export default function Contact() {
   }, []);
 
   const socialImages = [
-    "/img8.PNG",
-    "/img2.PNG",
-    "/img3.PNG",
-    "/img7.PNG"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlybJ-td_YhMZRu9VXWnKBoafr0MOy04K5Hw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj122L9UtpFfyoSwuLJPuBtXys4MzCcU8P6w&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAgeJZEBQvChvxsrmRQKbRJu3I85oQiueykA&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VkvJnd5Duo6GvOOqJ4pbrWkl832J0tgcKA&s"
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f0ed]">
+    <div className="min-h-screen bg-primary-bg">
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+        <Link href="/" className="text-xl font-medium text-text-primary">
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
-          <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors">
             Blog
           </Link>
-          <Link href="/contact" className="text-gray-900 hover:text-gray-600 transition-colors underline">
+          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Contact
           </Link>
         </nav>
@@ -56,31 +56,30 @@ export default function Contact() {
           {/* Text Content and Images */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary leading-tight">
                 Let&apos;s Connect
               </h1>
-              <p className="text-lg md:text-xl text-gray-900">
+              <p className="text-lg md:text-xl text-text-primary">
                 Starting therapy is courageous.
               </p>
-              <p className="text-lg md:text-xl text-gray-900">
+              <p className="text-lg md:text-xl text-text-primary">
                 Get in touch for questions, or to book a free 15-minute consultation.
               </p>
             </div>
 
             {/* Flower Images */}
-            <div className="relative flex gap-4 mt-8">
-              <div className="relative w-48 h-72 md:w-56 md:h-80 rounded-t-full overflow-hidden">
-                <Image
-                  src="/img8.PNG"
-                  alt="Lilac flowers"
-                  fill
-                  className="object-cover"
+            <div className="relative w-fit mt-8">
+              <div className="relative w-48 h-72 md:w-56 md:h-80 rounded-t-full overflow-hidden bg-accent-sage">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDgdPu3y_HakNKTm8cAumGLnXaSXRz7oUvA&s"
+                  alt="Peaceful therapy space"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="relative w-48 h-72 md:w-56 md:h-80 rounded-full overflow-hidden">
+              <div className="absolute -right-8 -bottom-6 w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/img5.PNG"
-                  alt="White flowers"
+                  src="/maya_pic.PNG"
+                  alt="Dr. Maya Reynolds"
                   fill
                   className="object-cover"
                 />
@@ -89,7 +88,7 @@ export default function Contact() {
           </div>
 
           {/* HIPAA Notice */}
-          <div className="bg-[#3d4a2c] text-white p-8 md:p-10 h-fit">
+          <div className="bg-accent-olive text-white p-8 md:p-10 h-fit">
             <p className="text-sm md:text-base leading-relaxed">
               <span className="font-bold">PLEASE NOTE:</span> If you opt to use a "Form Block" on your contact page this is not HIPAA-compliant. Squarespace stores data that is input into forms in the Marketing tab under Profiles. Instead, you can embed a HIPAA-compliant form, a link to your client portal, or simply put your email address.
             </p>
@@ -163,21 +162,20 @@ export default function Contact() {
       {/* Find Me on Social Section */}
       <section className="py-16 md:py-20 px-6 md:px-8 fade-in-up">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-12">
             Find me on social.
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {socialImages.map((img, index) => (
               <div 
                 key={index}
-                className="relative aspect-square cursor-pointer"
+                className="relative aspect-square cursor-pointer overflow-hidden"
                 onClick={() => setSelectedImage(img)}
               >
-                <Image
+                <img
                   src={img}
                   alt={`Social media image ${index + 1}`}
-                  fill
-                  className="object-cover hover:opacity-90 transition-opacity"
+                  className="w-full h-full object-cover hover:opacity-90 transition-opacity"
                 />
               </div>
             ))}
@@ -192,17 +190,16 @@ export default function Contact() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300 transition-colors z-10"
+            className="absolute top-4 right-4 text-white text-4xl font-bold hover:opacity-80 transition-colors z-10"
             onClick={() => setSelectedImage(null)}
           >
             ×
           </button>
-          <div className="relative max-w-4xl max-h-[90vh] w-full h-full">
-            <Image
+          <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img
               src={selectedImage}
               alt="Social media image enlarged"
-              fill
-              className="object-contain"
+              className="max-w-full max-h-full object-contain"
             />
           </div>
         </div>

@@ -23,17 +23,17 @@ export default function BlogPost1() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="min-h-screen bg-[#f5f0ed]">
+    <div className="min-h-screen bg-primary-bg">
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+        <Link href="/" className="text-xl font-medium text-text-primary">
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
-          <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors underline">
+          <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Blog
           </Link>
-          <Link href="/contact" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
             Contact
           </Link>
         </nav>
@@ -42,37 +42,50 @@ export default function BlogPost1() {
       {/* Blog Post Content */}
       <article className="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-20 fade-in-up">
         {/* Date */}
-        <p className="text-sm font-medium text-gray-900 mb-6 uppercase tracking-wider">
+        <p className="text-sm font-medium text-text-primary mb-6 uppercase tracking-wider">
           MAR 11
         </p>
 
+        {/* Featured Image */}
+        <div className="mb-8 rounded-lg overflow-hidden">
+          <img
+            src="https://resilientmindcounseling.com/wp-content/uploads/2024/02/Understanding-Anxiety-Disorders.jpg.webp"
+            alt="Understanding Anxiety"
+            className="w-full h-auto"
+          />
+        </div>
+
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-          Blog Post One
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-8 leading-tight">
+          Understanding Anxiety: What It Is and How to Manage It
         </h1>
 
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-6">
-          <p className="text-gray-800 leading-relaxed">
-            It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+          <p className="text-text-secondary leading-relaxed">
+            Anxiety is more than just feeling stressed or worried. It's a persistent sense of unease that can affect your daily life, relationships, and overall well-being. While everyone experiences anxiety from time to time, chronic anxiety can be debilitating and may require professional support.
           </p>
 
-          <p className="text-gray-800 leading-relaxed">
-            Don't worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what's going to separate this one from the rest. If you read the words back and don't hear your own voice in your head, that's a good sign you still have more work to do.
+          <p className="text-text-secondary leading-relaxed">
+            Understanding anxiety starts with recognizing its physical symptoms: racing heart, shortness of breath, tension in your body, and difficulty sleeping. These are your nervous system's way of responding to perceived threats, even when there's no immediate danger present.
           </p>
 
-          <p className="text-gray-800 leading-relaxed">
-            Be clear, be confident and don't overthink it. The beauty of your story is that it's going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+          <p className="text-text-secondary leading-relaxed">
+            The good news is that anxiety is highly treatable. Through evidence-based approaches like Cognitive Behavioral Therapy (CBT), mindfulness practices, and nervous system regulation techniques, you can learn to manage anxiety effectively and reclaim your sense of calm and control.
+          </p>
+
+          <p className="text-text-secondary leading-relaxed">
+            If you're struggling with persistent worry, panic attacks, or overwhelming anxiety, know that you don't have to navigate this alone. Professional support can help you develop the tools and insights needed to feel more grounded and present in your life.
           </p>
         </div>
 
         {/* Navigation to Next Post */}
-        <div className="mt-16 pt-8 border-t border-gray-300 flex justify-end">
+        <div className="mt-16 pt-8 border-t border-[#C5D1DA] flex justify-end">
           <Link 
             href="/blog/2" 
-            className="text-2xl md:text-3xl font-bold text-gray-900 hover:text-gray-600 transition-colors flex items-center gap-2"
+            className="text-2xl md:text-3xl font-bold text-text-primary hover:text-text-secondary transition-colors flex items-center gap-2"
           >
-            Blog Post Two
+            Healing from Trauma: EMDR
             <span className="text-3xl">›</span>
           </Link>
         </div>

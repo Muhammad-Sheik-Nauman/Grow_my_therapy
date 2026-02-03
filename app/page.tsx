@@ -36,17 +36,17 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f0ed]">
+    <div className="min-h-screen bg-primary-bg">
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+        <Link href="/" className="text-xl font-medium text-text-primary">
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
-          <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors">
             Blog
           </Link>
-          <Link href="/contact" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
             Contact
           </Link>
         </nav>
@@ -59,8 +59,8 @@ export default function Home() {
           <div className="flex-shrink-0">
             <div className="w-72 h-96 md:w-80 md:h-[420px] lg:w-96 lg:h-[500px] rounded-t-full overflow-hidden bg-accent-blue">
               <Image
-                src="/img1.PNG"
-                alt="Person holding lilac flowers"
+                src="/maya_pic.PNG"
+                alt="Dr. Maya Reynolds, Licensed Clinical Psychologist"
                 width={384}
                 height={500}
                 className="w-full h-full object-cover"
@@ -72,10 +72,10 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex-1 max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">
-              Live your life in full bloom
+              Anxiety, Trauma & Burnout Therapy in Santa Monica
             </h1>
             <p className="text-lg md:text-xl text-gray-900 mb-6 md:mb-8">
-              Therapy for Adults in Minneapolis, MN.
+              Helping high-achieving adults navigate life's challenges with compassion and evidence-based care.
             </p>
             <Link 
               href="/contact" 
@@ -94,13 +94,13 @@ export default function Home() {
           <div className="flex-1 px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20 flex flex-col">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">
-                Live a fulfilling life.
+                Find relief from what's holding you back.
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
-                Life can be challenging—especially when you're trying to balance your personal and professional life.
+                You're high-achieving, thoughtful, and self-aware—yet you feel stuck emotionally or constantly on edge. The lingering effects of past experiences, persistent anxiety, or overwhelming burnout are impacting your daily life.
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
-                It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.
+                Whether you're struggling with constant worry, difficulty sleeping, or feeling disconnected from yourself and your relationships, you don't have to navigate this alone.
               </p>
             </div>
             <div className="mt-12 pt-8 border-t border-gray-400">
@@ -114,12 +114,10 @@ export default function Home() {
           </div>
 
           {/* Image Section */}
-          <div className="flex-shrink-0 w-full md:w-1/2">
-            <Image
-              src="/img2.PNG"
-              alt="Coffee and flowers on a desk"
-              width={600}
-              height={480}
+          <div className="flex-shrink-0 w-full md:w-1/2 h-[600px] md:h-[700px]">
+            <img
+              src="https://media.istockphoto.com/id/1496615469/photo/serene-latin-woman-enjoy-sunset-with-gratitude.jpg?s=612x612&w=0&k=20&c=LXeGeLgKznGamU25tLajijCVuV5lxWIZH0RW5qN3k5g="
+              alt="Serene peaceful moment at sunset"
               className="w-full h-full object-cover"
             />
           </div>
@@ -129,67 +127,61 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-6 md:px-8 fade-in-up">        {/* My Specialties Section */}
         <div className="section-spacing">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-10 md:mb-16">
-            My Specialties
+            How I Can Help
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Self-Esteem Card */}
+            {/* Anxiety & Panic Card */}
             <div className="bg-card-bg border border-gray-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Self-Esteem
+                Anxiety & Panic Therapy
               </h3>
               <p className="text-gray-800 leading-relaxed mb-8">
-                Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.
+                Feel relief from constant worry, panic attacks, and the physical symptoms of anxiety. Using evidence-based approaches like CBT and mindfulness, I'll help you understand your nervous system and develop tools to feel more grounded and in control.
               </p>
               <div className="flex justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
-                  <Image
-                    src="/img3.PNG"
-                    alt="Person standing by window"
-                    width={256}
-                    height={256}
+                  <img
+                    src="https://bellcad.net/wp-content/uploads/2022/02/Anxiety.jpg"
+                    alt="Anxiety relief and calm"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Relationships Card */}
+            {/* Trauma & EMDR Card */}
             <div className="bg-card-bg border border-gray-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Relationships
+                Trauma & EMDR Therapy
               </h3>
               <p className="text-gray-800 leading-relaxed mb-8">
-                Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.
+                Process past experiences that continue to affect your present. Through EMDR and trauma-informed care, we'll work on nervous system regulation, building safety, and helping you move beyond survival mode into a life where you feel truly present.
               </p>
               <div className="flex justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
-                  <Image
-                    src="/img4.PNG"
-                    alt="Person sitting outdoors"
-                    width={256}
-                    height={256}
+                  <img
+                    src="https://media.istockphoto.com/id/1383621461/vector/frustrated-woman-concept.jpg?s=612x612&w=0&k=20&c=ITH3bwke482eT_ZGOJp-icTDLNgYPqgRAeAtwlYMl40="
+                    alt="Trauma healing and recovery"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Burnout Card */}
+            {/* Burnout & Professional Stress Card */}
             <div className="bg-card-bg border border-gray-400 p-6 md:p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Burnout
+               Professional Stress
               </h3>
               <p className="text-gray-800 leading-relaxed mb-8">
-                Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.
+                For entrepreneurs, creatives, and professionals feeling disconnected after years of pushing through stress. I specialize in helping high-achievers reconnect with themselves, set sustainable boundaries, and develop healthier patterns of living and working.
               </p>
               <div className="flex justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden">
-                  <Image
-                    src="/img5.PNG"
-                    alt="Person sitting by bookshelf"
-                    width={256}
-                    height={256}
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkp6mAh0Ri02uSji0edhADWU_DOABWjqdPKA&s"
+                    alt="Burnout and professional stress relief"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -203,11 +195,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-stretch overflow-hidden rounded-2xl md:rounded-3xl">
             {/* Image Section */}
             <div className="w-full md:w-1/2">
-              <Image
-                src="/img6.PNG"
-                alt="Person looking up peacefully"
-                width={600}
-                height={600}
+              <img
+                src="https://managementweekly.org/wp-content/uploads/2022/03/perfectionism_featured.jpg"
+                alt="Overcoming perfectionism and feeling stuck"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -216,38 +206,38 @@ export default function Home() {
             <div className="w-full md:w-1/2 bg-accent-purple px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16 flex flex-col">
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">
-                  You don't have to do this <em className="italic font-bold">all alone.</em>
+                  You don't have to stay <em className="italic font-bold">stuck.</em>
                 </h2>
                 
                 <p className="text-lg text-gray-900 mb-6">
-                  If you are facing any of these, there's hope:
+                  You may be experiencing:
                 </p>
 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-gray-900">
                     <span className="mt-1">•</span>
-                    <span>Persistent feelings of sadness or hopelessness</span>
+                    <span>Constant worry, tension in your body, or difficulty sleeping</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-900">
                     <span className="mt-1">•</span>
-                    <span>Trouble focusing or making decisions</span>
+                    <span>A sense you're always bracing for something to go wrong</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-900">
                     <span className="mt-1">•</span>
-                    <span>Difficulty maintaining relationships</span>
+                    <span>Past experiences that continue to affect your relationships and confidence</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-900">
                     <span className="mt-1">•</span>
-                    <span>Feeling constantly exhausted or unmotivated</span>
+                    <span>Professional burnout and disconnection from what once mattered</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-900">
                     <span className="mt-1">•</span>
-                    <span>A pervasive sense of being overwhelmed</span>
+                    <span>Difficulty regulating emotions or feeling safe in your own life</span>
                   </li>
                 </ul>
 
                 <p className="text-lg text-gray-900">
-                  With empathy and guidance, we'll work together to navigate the challenges life throws your way.
+                  Through a grounded, supportive approach, I'll help you develop insight, resilience, and a stronger relationship with yourself.
                 </p>
               </div>
 
@@ -269,10 +259,10 @@ export default function Home() {
             {/* Text Content */}
             <div className="flex-1 max-w-xl">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Hi, I'm Lilac.
+                Hi, I'm Dr. Maya Reynolds.
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed mb-8">
-                I'm committed to providing a safe and supportive environment where we can explore your thoughts, feelings, and behaviors. With empathy and guidance, we'll work together to navigate the challenges life throws your way.
+                I'm a licensed clinical psychologist based in Santa Monica, offering therapy for adults navigating anxiety, trauma, and burnout. I work with high-achieving, thoughtful individuals who feel stuck emotionally or on edge. My approach combines CBT, EMDR, mindfulness-based practices, and body-oriented techniques in a supportive yet reflective space. Therapy works best when you feel respected, understood, and actively involved—let's work together to help you develop insight, resilience, and sustainable ways of living.
               </p>
               <Link 
                 href="/contact" 
@@ -282,27 +272,17 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Flower Images */}
+            {/* Maya's Image */}
             <div className="flex-shrink-0 relative w-full md:w-auto flex justify-center md:justify-end">
               <div className="relative">
-                {/* Arch background shape with flower */}
-                <div className="w-72 h-80 md:w-80 md:h-96 bg-accent-blue rounded-t-full flex items-start justify-center pt-12 md:pt-16">
+                {/* Arch background shape with Maya's photo */}
+                <div className="w-72 h-80 md:w-80 md:h-96 bg-accent-sage rounded-t-full flex items-center justify-center overflow-hidden">
                   <Image
-                    src="/img7.PNG"
-                    alt="Lilac flowers"
-                    width={200}
-                    height={200}
-                    className="rounded-full"
-                  />
-                </div>
-                {/* Circular flower overlay */}
-                <div className="absolute -bottom-12 -right-8">
-                  <Image
-                    src="/img7.PNG"
-                    alt="White flowers"
-                    width={180}
-                    height={180}
-                    className="rounded-full"
+                    src="/maya_pic.PNG"
+                    alt="Dr. Maya Reynolds"
+                    width={320}
+                    height={384}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -315,12 +295,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             {/* Image Section */}
             <div className="flex-shrink-0">
-              <div className="w-72 h-80 md:w-80 md:h-96 bg-accent-blue rounded-t-full flex items-center justify-center overflow-hidden">
-                <Image
-                  src="/img8.PNG"
-                  alt="Lavender flowers in vase"
-                  width={320}
-                  height={384}
+              <div className="w-72 h-80 md:w-80 md:h-96 bg-accent-sage rounded-t-full flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://img.freepik.com/free-vector/speech-bubble-with-interrogation-sign-problem-icon_24911-114375.jpg?semt=ais_hybrid&w=740&q=80"
+                  alt="FAQ questions"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -340,13 +318,13 @@ export default function Home() {
                     className="flex items-start justify-between gap-4 w-full text-left group"
                   >
                     <span className="text-2xl font-semibold text-gray-900 group-hover:text-gray-600 transition-colors flex-1">
-                      Do you take insurance?
+                      What is your therapeutic approach?
                     </span>
                     <span className="text-2xl text-gray-900 mt-1">{openFaq === 0 ? '−' : '+'}</span>
                   </button>
                   {openFaq === 0 && (
                     <div className="mt-4 text-lg text-gray-800 pl-0">
-                      Answer goes here.
+                      I use an integrative approach that combines Cognitive Behavioral Therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques. Sessions are structured to feel supportive while leaving space for reflection and depth. My focus is on helping you develop practical tools alongside deeper insight and resilience.
                     </div>
                   )}
                 </div>
@@ -358,13 +336,13 @@ export default function Home() {
                     className="flex items-start justify-between gap-4 w-full text-left group"
                   >
                     <span className="text-2xl font-semibold text-gray-900 group-hover:text-gray-600 transition-colors flex-1">
-                      What are your rates?
+                      Do you offer in-person or online therapy?
                     </span>
                     <span className="text-2xl text-gray-900 mt-1">{openFaq === 1 ? '−' : '+'}</span>
                   </button>
                   {openFaq === 1 && (
                     <div className="mt-4 text-lg text-gray-800 pl-0">
-                      Answer goes here.
+                      I offer both in-person therapy at my Santa Monica office and secure telehealth sessions for greater flexibility. My office is designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Many clients appreciate having the option to switch between formats based on their needs.
                     </div>
                   )}
                 </div>
@@ -376,13 +354,13 @@ export default function Home() {
                     className="flex items-start justify-between gap-4 w-full text-left group"
                   >
                     <span className="text-2xl font-semibold text-gray-900 group-hover:text-gray-600 transition-colors flex-1">
-                      Do you have any openings?
+                      Who do you work best with?
                     </span>
                     <span className="text-2xl text-gray-900 mt-1">{openFaq === 2 ? '−' : '+'}</span>
                   </button>
                   {openFaq === 2 && (
                     <div className="mt-4 text-lg text-gray-800 pl-0">
-                      Answer goes here.
+                      I specialize in working with high-achieving, thoughtful adults who feel emotionally stuck or on edge. Many of my clients are entrepreneurs, creatives, or professionals dealing with anxiety, trauma, or burnout. If you're looking for a therapist who combines practical tools with depth-oriented work in a fast-paced yet supportive environment, we may be a good fit.
                     </div>
                   )}
                 </div>
@@ -411,7 +389,7 @@ export default function Home() {
               </button>
               {openBackground === 0 && (
                 <div className="mt-4 text-lg text-gray-800">
-                  Answer goes here.
+                  PsyD in Clinical Psychology
                 </div>
               )}
             </div>
@@ -429,7 +407,7 @@ export default function Home() {
               </button>
               {openBackground === 1 && (
                 <div className="mt-4 text-lg text-gray-800">
-                  Answer goes here.
+                  Licensed Clinical Psychologist, California
                 </div>
               )}
             </div>
@@ -441,13 +419,19 @@ export default function Home() {
                 className="flex items-center justify-between w-full text-left group"
               >
                 <span className="text-2xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
-                  Certifications
+                  Specializations
                 </span>
                 <span className="text-2xl text-gray-900">{openBackground === 2 ? '−' : '+'}</span>
               </button>
               {openBackground === 2 && (
                 <div className="mt-4 text-lg text-gray-800">
-                  Answer goes here.
+                  <ul className="space-y-2">
+                    <li>• Cognitive Behavioral Therapy (CBT)</li>
+                    <li>• EMDR (Eye Movement Desensitization and Reprocessing)</li>
+                    <li>• Mindfulness-Based Practices</li>
+                    <li>• Trauma-Informed Care</li>
+                    <li>• Body-Oriented Techniques</li>
+                  </ul>
                 </div>
               )}
             </div>
@@ -459,13 +443,13 @@ export default function Home() {
       <section className="bg-accent-olive py-12 md:py-16 lg:py-20 px-6 md:px-8 fade-in-up">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 md:mb-8">
-            Get started today.
+            Ready to take the first step?
           </h2>
           <p className="text-lg text-white mb-4 leading-relaxed">
-            Ready to take the first step towards a happier, healthier you?
+            If you're looking for a therapist who combines practical tools with depth-oriented work—and understands the realities of being a high-achieving adult—I may be a good fit.
           </p>
           <p className="text-lg text-white mb-10 leading-relaxed">
-            Contact me to book your first session. I look forward to starting this therapeutic journey with you.
+            Reach out today to schedule a consultation and see if we're a match.
           </p>
           <Link 
             href="/contact" 

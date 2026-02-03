@@ -27,41 +27,41 @@ export default function Blog() {
     {
       id: 1,
       date: "3/11/19",
-      title: "Blog Post One",
-      image: "/img3.PNG",
+      title: "Understanding Anxiety: What It Is and How to Manage It",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3hqXN8GFDiwsTPTZtoEvgiERQGFCsq5oVpg&s",
     },
     {
       id: 2,
       date: "3/11/19",
-      title: "Blog Post Two",
-      image: "/img4.PNG",
+      title: "Healing from Trauma: The EMDR Approach",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzGnULugV6hzeoLJFys8nd9nxpL3RGpo2pw&s",
     },
     {
       id: 3,
       date: "3/11/19",
-      title: "Blog Post Three",
-      image: "/img5.PNG",
+      title: "Burnout Recovery: Finding Balance as a High Achiever",
+      image: "https://physicianburnout.co.uk/wp-content/uploads/2016/06/burnout-recovery.png",
     },
     {
       id: 4,
       date: "3/11/19",
-      title: "Blog Post Four",
-      image: "/img8.PNG",
+      title: "The Power of Mindfulness in Daily Life",
+      image: "https://media.licdn.com/dms/image/v2/C4E12AQFphSwImavfSw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1579021538120?e=2147483647&v=beta&t=9E8FsveukrbbKsNTc5RfWqPxjLVtZhI3hnDd_bk_bQg",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f0ed]">
+    <div className="min-h-screen bg-primary-bg">
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+        <Link href="/" className="text-xl font-medium text-text-primary">
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
-          <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors underline">
+          <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Blog
           </Link>
-          <Link href="/contact" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
             Contact
           </Link>
         </nav>
@@ -72,10 +72,10 @@ export default function Blog() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="w-full">
-            <div className="relative w-full max-w-md mx-auto aspect-[3/4] rounded-t-full overflow-hidden">
+            <div className="relative w-full max-w-md mx-auto aspect-[3/4] rounded-t-full overflow-hidden bg-accent-sage">
               <Image
-                src="/img1.PNG"
-                alt="The Lilac Blog"
+                src="/maya_pic.PNG"
+                alt="Dr. Maya Reynolds"
                 fill
                 className="object-cover"
                 priority
@@ -85,13 +85,13 @@ export default function Blog() {
 
           {/* Text Content */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              The Lilac Blog
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight">
+              Dr. Maya's Blog
             </h1>
-            <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
-              My tiny corner of the internet where I talk about all things healing, heart, and wholeness.
+            <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
+              Insights on anxiety, trauma, and sustainable well-being.
             </p>
-            <p className="text-lg md:text-xl font-medium text-gray-900">
+            <p className="text-lg md:text-xl font-medium text-text-primary">
               Glad you&apos;re here.
             </p>
           </div>
@@ -105,23 +105,22 @@ export default function Blog() {
             <article key={post.id} className="space-y-4">
               {/* Image */}
               <div className="relative w-full aspect-[4/3] overflow-hidden">
-                <Image
+                <img
                   src={post.image}
                   alt={post.title}
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               {/* Content */}
               <div className="space-y-3">
-                <p className="text-sm text-gray-600">{post.date}</p>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                <p className="text-sm text-text-secondary">{post.date}</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-text-primary">
                   {post.title}
                 </h2>
                 <Link
                   href={`/blog/${post.id}`}
-                  className="inline-block text-gray-900 underline hover:text-gray-600 transition-colors"
+                  className="inline-block text-text-primary underline hover:text-text-secondary transition-colors"
                 >
                   Read More
                 </Link>
@@ -145,7 +144,7 @@ export default function Blog() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="px-4 py-3 w-full sm:w-64 text-gray-900 placeholder-gray-500 bg-white"
+                className="px-4 py-3 w-full sm:w-64 text-text-primary placeholder-text-secondary bg-white"
               />
               <button
                 type="submit"

@@ -23,17 +23,17 @@ export default function BlogPost4() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="min-h-screen bg-[#f5f0ed]">
+    <div className="min-h-screen bg-primary-bg">
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+        <Link href="/" className="text-xl font-medium text-text-primary">
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
-          <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors underline">
+          <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Blog
           </Link>
-          <Link href="/contact" className="text-gray-900 hover:text-gray-600 transition-colors">
+          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
             Contact
           </Link>
         </nav>
@@ -42,35 +42,48 @@ export default function BlogPost4() {
       {/* Blog Post Content */}
       <article className="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-20 fade-in-up">
         {/* Date */}
-        <p className="text-sm font-medium text-gray-900 mb-6 uppercase tracking-wider">
+        <p className="text-sm font-medium text-text-primary mb-6 uppercase tracking-wider">
           MAR 11
         </p>
 
+        {/* Featured Image */}
+        <div className="mb-8 rounded-lg overflow-hidden">
+          <img
+            src="https://media.licdn.com/dms/image/v2/C4E12AQFphSwImavfSw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1579021538120?e=2147483647&v=beta&t=9E8FsveukrbbKsNTc5RfWqPxjLVtZhI3hnDd_bk_bQg"
+            alt="The Power of Mindfulness in Daily Life"
+            className="w-full h-auto"
+          />
+        </div>
+
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-          Blog Post Four
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-8 leading-tight">
+          The Power of Mindfulness in Daily Life
         </h1>
 
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-6">
-          <p className="text-gray-800 leading-relaxed">
-            It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+          <p className="text-text-secondary leading-relaxed">
+            Mindfulness isn't about emptying your mind or achieving perfect zen. It's about being present with whatever is happening right now—thoughts, emotions, sensations—without judgment or the need to fix or change anything. For busy professionals and high achievers, this simple practice can be transformative.
           </p>
 
-          <p className="text-gray-800 leading-relaxed">
-            Don't worry about sounding professional. Sound like you. There are over 1.5 billion websites out there, but your story is what's going to separate this one from the rest. If you read the words back and don't hear your own voice in your head, that's a good sign you still have more work to do.
+          <p className="text-text-secondary leading-relaxed">
+            The benefits of mindfulness are well-documented: reduced anxiety and stress, improved focus and decision-making, better emotional regulation, and enhanced overall well-being. But the real power of mindfulness lies in how it changes your relationship with your thoughts and emotions. Instead of being swept away by worry or stress, you learn to observe them with curiosity and compassion.
           </p>
 
-          <p className="text-gray-800 leading-relaxed">
-            Be clear, be confident and don't overthink it. The beauty of your story is that it's going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+          <p className="text-text-secondary leading-relaxed">
+            You don't need hours of meditation to experience the benefits. Simple practices like mindful breathing for a few minutes, bringing full attention to routine activities like drinking coffee or walking, or doing a body scan before bed can make a significant difference. The key is consistency, not perfection.
+          </p>
+
+          <p className="text-text-secondary leading-relaxed">
+            In therapy, I integrate mindfulness-based practices with other approaches to help clients develop greater self-awareness and emotional regulation. Whether you're dealing with anxiety, recovering from trauma, or navigating burnout, mindfulness can be a powerful tool for reconnecting with yourself and finding calm amidst life's challenges.
           </p>
         </div>
 
         {/* Navigation back to blog */}
-        <div className="mt-16 pt-8 border-t border-gray-300 flex justify-end">
+        <div className="mt-16 pt-8 border-t border-[#C5D1DA] flex justify-end">
           <Link 
             href="/blog" 
-            className="text-2xl md:text-3xl font-bold text-gray-900 hover:text-gray-600 transition-colors flex items-center gap-2"
+            className="text-2xl md:text-3xl font-bold text-text-primary hover:text-text-secondary transition-colors flex items-center gap-2"
           >
             Back to Blog
             <span className="text-3xl">›</span>

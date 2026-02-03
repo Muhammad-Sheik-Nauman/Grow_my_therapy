@@ -4,25 +4,25 @@ export default function Footer() {
   return (
     <>
       {/* Footer */}
-      <footer className="bg-card-bg py-10 md:py-12 px-6 md:px-8">
+      <footer className="bg-primary-bg py-10 md:py-12 px-6 md:px-8 border-t border-[#C5D1DA]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Lilac Template Info */}
+          {/* Dr. Maya Reynolds Info */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Lilac Template
+            <h3 className="text-2xl font-bold text-text-primary mb-4">
+              Dr. Maya Reynolds, PsyD
             </h3>
-            <address className="not-italic text-gray-800 mb-6">
-              <p>123 Example Road</p>
-              <p>Minneapolis, MN</p>
+            <address className="not-italic text-text-secondary mb-6">
+              <p>123th Street #5</p>
+              <p>Santa Monica, CA 90401</p>
             </address>
             <div className="space-y-2">
               <p>
-                <a href="mailto:email@example.com" className="text-gray-900 underline hover:text-gray-600">
-                  email@example.com
+                <a href="mailto:contact@drmayareynolds.com" className="text-text-primary underline hover:text-text-secondary">
+                  contact@drmayareynolds.com
                 </a>
               </p>
               <p>
-                <a href="tel:5555555555" className="text-gray-900 underline hover:text-gray-600">
+                <a href="tel:5555555555" className="text-text-primary underline hover:text-text-secondary">
                   (555) 555-5555
                 </a>
               </p>
@@ -31,31 +31,31 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-text-primary mb-4">
               Hours
             </h3>
-            <p className="text-gray-800">Monday – Friday</p>
-            <p className="text-gray-800">10am – 6pm</p>
+            <p className="text-text-secondary">Monday – Friday</p>
+            <p className="text-text-secondary">10am – 6pm</p>
           </div>
 
           {/* Find Links */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-text-primary mb-4">
               Find
             </h3>
             <nav className="space-y-2">
               <p>
-                <Link href="/" className="text-gray-900 underline hover:text-gray-600">
+                <Link href="/" className="text-text-primary underline hover:text-text-secondary">
                   Home
                 </Link>
               </p>
               <p>
-                <Link href="/contact" className="text-gray-900 underline hover:text-gray-600">
+                <Link href="/contact" className="text-text-primary underline hover:text-text-secondary">
                   Contact
                 </Link>
               </p>
               <p>
-                <Link href="/blog" className="text-gray-900 underline hover:text-gray-600">
+                <Link href="/blog" className="text-text-primary underline hover:text-text-secondary">
                   Blog
                 </Link>
               </p>
@@ -65,30 +65,30 @@ export default function Footer() {
       </footer>
 
       {/* Footer Bottom */}
-      <div className="bg-footer-bottom py-6 md:py-8 px-6 md:px-8">
+      <div className="bg-accent-blue py-6 md:py-8 px-6 md:px-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-900">
-            <Link href="/privacy" className="underline hover:text-gray-600">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-white">
+            <Link href="/privacy" className="underline hover:opacity-80">
               Privacy & Cookies Policy
             </Link>
-            <Link href="/estimate" className="underline hover:text-gray-600">
+            <Link href="/estimate" className="underline hover:opacity-80">
               Good Faith Estimate
             </Link>
-            <Link href="/terms" className="underline hover:text-gray-600">
+            <Link href="/terms" className="underline hover:opacity-80">
               Website Terms & Conditions
             </Link>
-            <Link href="/disclaimer" className="underline hover:text-gray-600">
+            <Link href="/disclaimer" className="underline hover:opacity-80">
               Disclaimer
             </Link>
           </div>
-          <p className="text-sm text-gray-900">
+          <p className="text-sm text-white">
             Website Template Credits:{" "}
-            <a href="https://gobloomcreative.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">
+            <a href="https://gobloomcreative.com" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80">
               Go Bloom Creative
             </a>
           </p>
-          <p className="text-sm text-gray-900">
-            All Rights Reserved © 2024 Your Business Name Here, LLC.
+          <p className="text-sm text-white">
+            All Rights Reserved © 2024 Dr. Maya Reynolds Psychology Services.
           </p>
         </div>
       </div>
