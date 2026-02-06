@@ -63,11 +63,11 @@ export default function BlogPost2() {
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-6">
           <p className="text-text-secondary leading-relaxed">
-            Trauma doesn't just live in our memories—it can become stored in our bodies and nervous systems, affecting how we feel, think, and move through the world. For many people, traditional talk therapy alone isn't enough to fully process traumatic experiences. That's where EMDR (Eye Movement Desensitization and Reprocessing) comes in.
+            Trauma doesn't just live in our memories; it can become stored in our bodies and nervous systems, affecting how we feel, think, and move through the world. For many people, traditional talk therapy alone isn't enough to fully process traumatic experiences. That's where EMDR (Eye Movement Desensitization and Reprocessing) comes in.
           </p>
 
           <p className="text-text-secondary leading-relaxed">
-            EMDR is an evidence-based therapy that helps your brain reprocess traumatic memories in a way that reduces their emotional intensity. Through bilateral stimulation—typically guided eye movements—EMDR allows you to access disturbing memories while simultaneously activating your brain's natural healing mechanisms. This process helps transform how these memories are stored, making them feel less overwhelming and intrusive.
+            EMDR is an evidence-based therapy that helps your brain reprocess traumatic memories in a way that reduces their emotional intensity. Through bilateral stimulation (typically guided eye movements), EMDR allows you to access disturbing memories while simultaneously activating your brain's natural healing mechanisms. This process helps transform how these memories are stored, making them feel less overwhelming and intrusive.
           </p>
 
           <p className="text-text-secondary leading-relaxed">

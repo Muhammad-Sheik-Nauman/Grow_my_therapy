@@ -34,8 +34,8 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-text-primary mb-4">
               Hours
             </h3>
-            <p className="text-text-secondary">Monday – Friday</p>
-            <p className="text-text-secondary">10am – 6pm</p>
+            <p className="text-text-secondary">Monday to Friday</p>
+            <p className="text-text-secondary">10am to 6pm</p>
           </div>
 
           {/* Find Links */}
@@ -65,25 +65,28 @@ export default function Footer() {
       </footer>
 
       {/* Footer Bottom */}
-      <div className="bg-accent-blue py-6 md:py-8 px-6 md:px-8">
+      <div className="bg-footer-bottom py-6 md:py-8 px-6 md:px-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-white">
-            <Link href="/privacy" className="underline hover:opacity-80">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-white">
+            <Link href="/privacy" className="hover:text-gray-300 transition-colors">
               Privacy & Cookies Policy
             </Link>
-            <Link href="/estimate" className="underline hover:opacity-80">
+            <span className="text-white">•</span>
+            <Link href="/estimate" className="hover:text-gray-300 transition-colors">
               Good Faith Estimate
             </Link>
-            <Link href="/terms" className="underline hover:opacity-80">
+            <span className="text-white">•</span>
+            <Link href="/terms" className="hover:text-gray-300 transition-colors">
               Website Terms & Conditions
             </Link>
-            <Link href="/disclaimer" className="underline hover:opacity-80">
+            <span className="text-white">•</span>
+            <Link href="/disclaimer" className="hover:text-gray-300 transition-colors">
               Disclaimer
             </Link>
           </div>
           <p className="text-sm text-white">
             Website Template Credits:{" "}
-            <a href="https://gobloomcreative.com" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80">
+            <a href="https://gobloomcreative.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
               Go Bloom Creative
             </a>
           </p>

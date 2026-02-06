@@ -36,15 +36,14 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-primary-bg">
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+      <header className="sticky top-0 z-50 bg-primary-bg/80 backdrop-blur-md border-b border-gray-400/20 flex items-center justify-between px-8 py-3 max-w-7xl mx-auto">
         <Link href="/" className="text-xl font-medium text-text-primary">
           Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
           <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors">
             Blog
-          </Link>
-          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors underline">
+          </Link>          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Contact
           </Link>
         </nav>
@@ -138,8 +137,8 @@ export default function Contact() {
             </div>
             <div className="space-y-2">
               <h3 className="text-3xl font-bold">Hours</h3>
-              <p className="text-lg">Monday – Friday</p>
-              <p className="text-lg">10am – 6pm</p>
+              <p className="text-lg">Monday to Friday</p>
+              <p className="text-lg">10am to 6pm</p>
             </div>
           </div>
 
@@ -169,13 +168,13 @@ export default function Contact() {
             {socialImages.map((img, index) => (
               <div 
                 key={index}
-                className="relative aspect-square cursor-pointer overflow-hidden"
+                className="relative aspect-square cursor-pointer overflow-hidden bg-card-bg border border-gray-400 rounded-2xl hover:shadow-lg transition-shadow"
                 onClick={() => setSelectedImage(img)}
               >
                 <img
                   src={img}
                   alt={`Social media image ${index + 1}`}
-                  className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}

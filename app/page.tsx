@@ -38,11 +38,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-primary-bg">
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+      <header className="sticky top-0 z-50 bg-primary-bg/80 backdrop-blur-md border-b border-gray-400/20 flex items-center justify-between px-8 py-3 max-w-7xl mx-auto">
         <Link href="/" className="text-xl font-medium text-text-primary">
           Dr. Maya Reynolds, PsyD
         </Link>
-        <nav className="flex gap-8">
+        <nav className="flex gap-8 ml-8">
           <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors">
             Blog
           </Link>
@@ -88,7 +88,7 @@ export default function Home() {
       </main>
 
       {/* Live a Fulfilling Life Section */}
-      <section className="section-spacing bg-card-bg overflow-hidden fade-in-up">
+      <section className="section-spacing bg-card-bg overflow-hidden fade-in-up border-y border-gray-400">
         <div className="flex flex-col md:flex-row items-center">
           {/* Text Content */}
           <div className="flex-1 px-6 md:px-12 lg:px-16 py-12 md:py-16 lg:py-20 flex flex-col">
@@ -97,7 +97,7 @@ export default function Home() {
                 Find relief from what's holding you back.
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
-                You're high-achieving, thoughtful, and self-aware—yet you feel stuck emotionally or constantly on edge. The lingering effects of past experiences, persistent anxiety, or overwhelming burnout are impacting your daily life.
+                You're high-achieving, thoughtful, and self-aware yet you feel stuck emotionally or constantly on edge. The lingering effects of past experiences, persistent anxiety, or overwhelming burnout are impacting your daily life.
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
                 Whether you're struggling with constant worry, difficulty sleeping, or feeling disconnected from yourself and your relationships, you don't have to navigate this alone.
@@ -192,7 +192,7 @@ export default function Home() {
 
         {/* You Don't Have to Do This All Alone Section */}
         <div className="section-spacing fade-in-up">
-          <div className="flex flex-col md:flex-row items-stretch overflow-hidden rounded-2xl md:rounded-3xl">
+          <div className="flex flex-col md:flex-row items-stretch overflow-hidden rounded-2xl md:rounded-3xl border border-gray-400">
             {/* Image Section */}
             <div className="w-full md:w-1/2">
               <img
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
 
             {/* Text Content */}
-            <div className="w-full md:w-1/2 bg-accent-purple px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16 flex flex-col">
+            <div className="w-full md:w-1/2 bg-card-bg px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16 flex flex-col">
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">
                   You don't have to stay <em className="italic font-bold">stuck.</em>
@@ -253,16 +253,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Hi, I'm Lilac Section */}
+        {/* Hi, I'm Dr. Maya Reynolds Section */}
         <div className="section-spacing fade-in-up">
-          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 bg-card-bg border border-gray-400 rounded-2xl p-8 md:p-12">
             {/* Text Content */}
             <div className="flex-1 max-w-xl">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
                 Hi, I'm Dr. Maya Reynolds.
               </h2>
               <p className="text-lg text-gray-800 leading-relaxed mb-8">
-                I'm a licensed clinical psychologist based in Santa Monica, offering therapy for adults navigating anxiety, trauma, and burnout. I work with high-achieving, thoughtful individuals who feel stuck emotionally or on edge. My approach combines CBT, EMDR, mindfulness-based practices, and body-oriented techniques in a supportive yet reflective space. Therapy works best when you feel respected, understood, and actively involved—let's work together to help you develop insight, resilience, and sustainable ways of living.
+                I'm a licensed clinical psychologist based in Santa Monica, offering therapy for adults navigating anxiety, trauma, and burnout. I work with high-achieving, thoughtful individuals who feel stuck emotionally or on edge. My approach combines CBT, EMDR, mindfulness-based practices, and body-oriented techniques in a supportive yet reflective space. Therapy works best when you feel respected, understood, and actively involved. Let's work together to help you develop insight, resilience, and sustainable ways of living.
               </p>
               <Link 
                 href="/contact" 
@@ -286,6 +286,94 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Office Section */}
+        <div className="section-spacing fade-in-up">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Our Office - Calm Space for Healing
+            </h2>
+            <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
+              My Santa Monica office is thoughtfully designed to feel grounding and safe, a place where you can pause, reflect, and do meaningful work. With natural light, comfortable seating, and a serene atmosphere, the space reflects my commitment to creating an environment where healing feels possible.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-12">
+            {/* Office Image 1 */}
+            <div className="bg-card-bg border border-gray-400 overflow-hidden rounded-2xl hover:shadow-lg transition-shadow">
+              <img
+                src="/doc1.PNG"
+                alt="Dr. Maya Reynolds therapy office"
+                className="w-full h-[400px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+
+            {/* Office Image 2 */}
+            <div className="bg-card-bg border border-gray-400 overflow-hidden rounded-2xl hover:shadow-lg transition-shadow">
+              <img
+                src="/doc2.PNG"
+                alt="Therapy practice space in Santa Monica"
+                className="w-full h-[400px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Office Details */}
+          <div className="bg-card-bg border border-gray-400 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              {/* Location */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Location
+                </h3>
+                <p className="text-gray-800">
+                  Santa Monica, California
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Accessible and centrally located
+                </p>
+              </div>
+
+              {/* Session Options */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Session Options
+                </h3>
+                <p className="text-gray-800">
+                  In-person & Telehealth
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Flexible formats to meet your needs
+                </p>
+              </div>
+
+              {/* Environment */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Environment
+                </h3>
+                <p className="text-gray-800">
+                  Private & Comfortable
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  A space designed for safety and healing
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-8 border-t border-gray-400 text-center">
+              <p className="text-lg text-gray-800 leading-relaxed mb-6">
+                Whether you choose to meet in person or online, my priority is creating a space where you feel heard, respected, and supported. The office features calming tones, comfortable furnishings, and an uncluttered aesthetic that helps you focus on your inner work.
+              </p>
+              <Link 
+                href="/office" 
+                className="btn-primary"
+              >
+                LEARN MORE ABOUT OUR OFFICE →
+              </Link>
             </div>
           </div>
         </div>
@@ -375,7 +463,7 @@ export default function Home() {
             My Professional Background
           </h2>
           
-          <div className="space-y-6">
+          <div className="space-y-6 bg-card-bg border border-gray-400 rounded-2xl p-8">
             {/* Education */}
             <div className="border-t border-gray-400 pt-6">
               <button 
@@ -446,7 +534,7 @@ export default function Home() {
             Ready to take the first step?
           </h2>
           <p className="text-lg text-white mb-4 leading-relaxed">
-            If you're looking for a therapist who combines practical tools with depth-oriented work—and understands the realities of being a high-achieving adult—I may be a good fit.
+            If you're looking for a therapist who combines practical tools with depth-oriented work and understands the realities of being a high-achieving adult, I may be a good fit.
           </p>
           <p className="text-lg text-white mb-10 leading-relaxed">
             Reach out today to schedule a consultation and see if we're a match.

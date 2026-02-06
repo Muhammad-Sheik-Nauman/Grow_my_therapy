@@ -7,7 +7,7 @@ export default function NotFound() {
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto w-full">
         <Link href="/" className="text-xl font-medium text-gray-900">
-          Lilac Template
+          Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
           <Link href="/blog" className="text-gray-900 hover:text-gray-600 transition-colors">

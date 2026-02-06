@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dr. Maya Reynolds, PsyD - Anxiety, Trauma & Burnout Therapy in Santa Monica",
   description: "Licensed clinical psychologist specializing in anxiety, trauma, and burnout therapy for high-achieving adults in Santa Monica, CA. CBT, EMDR, and mindfulness-based approaches.",
+  icons: {
+    icon: "/maya_pic.PNG",
+  },
 };
 
 export default function RootLayout({

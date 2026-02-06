@@ -53,15 +53,14 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-primary-bg">
       {/* Header */}
-      <header className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+      <header className="sticky top-0 z-50 bg-primary-bg/80 backdrop-blur-md border-b border-gray-400/20 flex items-center justify-between px-8 py-3 max-w-7xl mx-auto">
         <Link href="/" className="text-xl font-medium text-text-primary">
           Dr. Maya Reynolds, PsyD
         </Link>
         <nav className="flex gap-8">
           <Link href="/blog" className="text-text-primary hover:text-text-secondary transition-colors underline">
             Blog
-          </Link>
-          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
+          </Link>          <Link href="/contact" className="text-text-primary hover:text-text-secondary transition-colors">
             Contact
           </Link>
         </nav>
@@ -102,18 +101,18 @@ export default function Blog() {
       <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-20 fade-in-up">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {blogPosts.map((post) => (
-            <article key={post.id} className="space-y-4">
+            <article key={post.id} className="bg-card-bg border border-gray-400 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
               {/* Image */}
               <div className="relative w-full aspect-[4/3] overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
               {/* Content */}
-              <div className="space-y-3">
+              <div className="p-6 space-y-3">
                 <p className="text-sm text-text-secondary">{post.date}</p>
                 <h2 className="text-2xl md:text-3xl font-bold text-text-primary">
                   {post.title}

@@ -63,7 +63,7 @@ export default function BlogPost4() {
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-6">
           <p className="text-text-secondary leading-relaxed">
-            Mindfulness isn't about emptying your mind or achieving perfect zen. It's about being present with whatever is happening right now—thoughts, emotions, sensations—without judgment or the need to fix or change anything. For busy professionals and high achievers, this simple practice can be transformative.
+            Mindfulness isn't about emptying your mind or achieving perfect zen. It's about being present with whatever is happening right now (thoughts, emotions, sensations) without judgment or the need to fix or change anything. For busy professionals and high achievers, this simple practice can be transformative.
           </p>
 
           <p className="text-text-secondary leading-relaxed">

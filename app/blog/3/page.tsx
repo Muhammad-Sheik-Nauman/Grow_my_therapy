@@ -63,7 +63,7 @@ export default function BlogPost3() {
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-6">
           <p className="text-text-secondary leading-relaxed">
-            Burnout doesn't happen overnight. It's the cumulative effect of pushing through stress, ignoring your body's signals, and maintaining unsustainable patterns over time. For high-achieving professionals, entrepreneurs, and creatives, burnout often feels like a personal failure—but it's actually a sign that your system needs recalibration.
+            Burnout doesn't happen overnight. It's the cumulative effect of pushing through stress, ignoring your body's signals, and maintaining unsustainable patterns over time. For high-achieving professionals, entrepreneurs, and creatives, burnout often feels like a personal failure, but it's actually a sign that your system needs recalibration.
           </p>
 
           <p className="text-text-secondary leading-relaxed">
@@ -75,7 +75,7 @@ export default function BlogPost3() {
           </p>
 
           <p className="text-text-secondary leading-relaxed">
-            In my practice, I help high achievers reconnect with themselves beyond their accomplishments, establish healthier boundaries, and develop nervous system regulation skills. Recovery isn't about lowering your standards—it's about creating sustainable success that doesn't come at the cost of your health and relationships. You can achieve your goals without burning out in the process.
+            In my practice, I help high achievers reconnect with themselves beyond their accomplishments, establish healthier boundaries, and develop nervous system regulation skills. Recovery isn't about lowering your standards; it's about creating sustainable success that doesn't come at the cost of your health and relationships. You can achieve your goals without burning out in the process.
           </p>
         </div>
 
