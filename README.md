@@ -51,8 +51,6 @@ A modern, fully responsive therapist website for **Dr. Maya Reynolds, PsyD**.
 
 ## Part 4: Video Walkthrough (Communication Test)
 
-- [Loom Video Demo](https://grow-my-therapy-cyan.vercel.app/)  
-  *(Replace with Loom link if available)*
 - Walkthrough covers desktop & mobile views, design choices, and how Dr. Maya’s profile is reflected throughout
 
 ---
